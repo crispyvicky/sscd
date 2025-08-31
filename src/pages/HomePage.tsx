@@ -54,7 +54,7 @@ const HomePage: React.FC<HomePageProps> = ({ setShowLeadPopup }) => {
             <span className="font-serif text-deep-gold">Into Living Art</span>
           </h1>
           <p className="text-xl md:text-2xl mb-8 max-w-2xl mx-auto text-warm-taupe animate-in fade-in duration-1000 delay-300">
-            Award-winning interior design studio creating sophisticated, personalized environments that reflect your unique style and enhance your daily life.
+        An interior design studio creating sophisticated, personalized environments that reflect your unique style and enhance your daily life.
           </p>
           <Link
             to="/contact"
@@ -72,12 +72,12 @@ const HomePage: React.FC<HomePageProps> = ({ setShowLeadPopup }) => {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
               <h2 className="text-4xl font-bold text-charcoal mb-6">
-                <span className="font-serif text-navy">Meet Sarah</span>
+                <span className="font-serif text-navy">Meet Murali</span>
                 <br />
                 <span className="font-sans">Creative Director</span>
               </h2>
               <p className="text-lg text-charcoal/80 mb-6 leading-relaxed">
-                With over 15 years of experience in luxury residential and commercial design, Sarah Singh brings a unique blend of contemporary elegance and timeless sophistication to every project. Her approach focuses on creating spaces that are both beautiful and deeply functional.
+                With over 15 years of experience in luxury residential and commercial design, murali krishna brings a unique blend of contemporary elegance and timeless sophistication to every project. Her approach focuses on creating spaces that are both beautiful and deeply functional.
               </p>
               <p className="text-lg text-charcoal/80 mb-8 leading-relaxed">
                 Our studio's philosophy centers on understanding how you live and work, then crafting environments that enhance your daily experience while reflecting your personal aesthetic.
@@ -95,7 +95,7 @@ const HomePage: React.FC<HomePageProps> = ({ setShowLeadPopup }) => {
               <div className="rounded-lg overflow-hidden shadow-2xl">
                 <img
                   src="https://images.pexels.com/photos/3184305/pexels-photo-3184305.jpeg?auto=compress&cs=tinysrgb&w=600&h=800&fit=crop"
-                  alt="Sarah Singh, Creative Director"
+                  alt="Murali krishna, Creative Director"
                   className="w-full h-96 object-cover"
                 />
               </div>
@@ -103,7 +103,7 @@ const HomePage: React.FC<HomePageProps> = ({ setShowLeadPopup }) => {
                 <div className="flex items-center space-x-4">
                   <Award size={24} />
                   <div>
-                    <p className="font-semibold">Award Winning</p>
+                    <p className="font-semibold"></p>
                     <p className="text-sm">Design Studio</p>
                   </div>
                 </div>
