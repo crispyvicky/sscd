@@ -17,8 +17,8 @@ const projects = {
       'https://images.pexels.com/photos/1571463/pexels-photo-1571463.jpeg?auto=compress&cs=tinysrgb&w=1200&h=800&fit=crop',
     ],
     testimonial: {
-      text: "Sarah and her team completely transformed our penthouse. Every detail was thoughtfully considered, from the custom lighting to the carefully selected art pieces. The space now feels like a true reflection of our family.",
-      author: "Michael & Jennifer Chen",
+      text: "Murali and his team completely transformed our penthouse. Every detail was thoughtfully considered, from the custom lighting to the carefully selected art pieces. The space now feels like a true reflection of our family.",
+      author: "Devi",
       role: "Homeowners"
     }
   },

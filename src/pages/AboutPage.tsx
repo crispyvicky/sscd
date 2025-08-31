@@ -47,7 +47,7 @@ const AboutPage = () => {
                 <span className="font-sans">SSCD Interiors</span>
               </h1>
               <p className="text-xl text-charcoal/80 mb-6 leading-relaxed">
-                Founded in 2010 by Sarah Singh, SSCD Interiors has established itself as a premier design studio specializing in sophisticated residential and commercial environments.
+                Founded in 2010 by murali krishna, SSCD Interiors has established itself as a premier design studio specializing in sophisticated residential and commercial environments.
               </p>
               <p className="text-lg text-charcoal/70 leading-relaxed">
                 Our approach combines timeless design principles with contemporary innovation, creating spaces that are both aesthetically stunning and deeply functional for the way you live and work.
@@ -57,7 +57,7 @@ const AboutPage = () => {
             <div className="relative">
               <img
                 src="https://images.pexels.com/photos/3184306/pexels-photo-3184306.jpeg?auto=compress&cs=tinysrgb&w=600&h=700&fit=crop"
-                alt="Sarah Singh in her design studio"
+                alt="Murali Krishna in her design studio"
                 className="rounded-lg shadow-2xl w-full h-96 object-cover"
               />
               <div className="absolute -top-6 -left-6 bg-sage-green rounded-lg p-4 text-ivory">
@@ -81,7 +81,7 @@ const AboutPage = () => {
           
           <div className="prose prose-lg max-w-none">
             <p className="text-charcoal/80 mb-6 leading-relaxed">
-              Sarah's journey into interior design began with a degree in Architecture from UC Berkeley, followed by years working with renowned design firms in San Francisco and New York. Her multicultural background and extensive travels have deeply influenced her aesthetic, creating a unique design language that blends global influences with local sensibilities.
+              Murali's journey into interior design began with a degree in Architecture from UC Berkeley, followed by years working with renowned design firms in San Francisco and New York. Her multicultural background and extensive travels have deeply influenced her aesthetic, creating a unique design language that blends global influences with local sensibilities.
             </p>
             
             <p className="text-charcoal/80 mb-6 leading-relaxed">
@@ -89,7 +89,7 @@ const AboutPage = () => {
             </p>
             
             <p className="text-charcoal/80 leading-relaxed">
-              Today, our team of talented designers and project managers continues to push boundaries while maintaining the personalized service and attention to detail that has become our signature. Every project, regardless of size, receives the same level of care and creative energy.
+              Today, our team of talented designers  continues to push boundaries while maintaining the personalized service and attention to detail that has become our signature. Every project, regardless of size, receives the same level of care and creative energy.
             </p>
           </div>
         </div>
@@ -159,7 +159,7 @@ const AboutPage = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             <div className="bg-ivory/10 rounded-lg p-8 backdrop-blur-sm">
               <p className="text-ivory/90 mb-6 text-lg italic leading-relaxed">
-                "Sarah and her team transformed our home into something we never could have imagined. Every detail was thoughtfully considered, and the result exceeded all our expectations."
+                "Murali and her team transformed our home into something we never could have imagined. Every detail was thoughtfully considered, and the result exceeded all our expectations."
               </p>
               <div className="flex items-center">
                 <img
@@ -168,7 +168,7 @@ const AboutPage = () => {
                   className="w-12 h-12 rounded-full mr-4"
                 />
                 <div>
-                  <h4 className="text-ivory font-semibold">Michael & Jennifer Chen</h4>
+                  <h4 className="text-ivory font-semibold"> Devi</h4>
                   <p className="text-warm-taupe text-sm">Penthouse Renovation</p>
                 </div>
               </div>
@@ -185,7 +185,7 @@ const AboutPage = () => {
                   className="w-12 h-12 rounded-full mr-4"
                 />
                 <div>
-                  <h4 className="text-ivory font-semibold">David Rodriguez</h4>
+                  <h4 className="text-ivory font-semibold">Venkatesh</h4>
                   <p className="text-warm-taupe text-sm">CEO, TechFlow Inc.</p>
                 </div>
               </div>
