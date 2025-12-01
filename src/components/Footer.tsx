@@ -1,4 +1,4 @@
-import React from 'react';
+
 import { Link } from 'react-router-dom';
 import { Instagram, Facebook, Twitter, Mail, Phone } from 'lucide-react';
 
@@ -6,7 +6,9 @@ const Footer = () => {
   return (
     <footer className="bg-charcoal text-ivory py-12">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+
           {/* Brand */}
           <div>
             <h3 className="text-2xl font-bold mb-4">
@@ -38,25 +40,36 @@ const Footer = () => {
           {/* Contact Info */}
           <div>
             <h4 className="text-lg font-semibold mb-4">Get In Touch</h4>
-            <div className="space-y-2">
+            <div className="space-y-3">
+
+              {/* Email */}
               <div className="flex items-center">
                 <Mail className="w-4 h-4 mr-2 text-deep-gold" />
                 <span className="text-warm-taupe">hello@sscdinteriors.com</span>
               </div>
-              <div className="flex items-center">
-                <Phone className="w-4 h-4 mr-2 text-deep-gold" />
-                <span className="text-warm-taupe">+1 (555) 123-4567</span>
+
+              {/* Phone Numbers */}
+              <div className="flex items-start">
+                <Phone className="w-4 h-4 mr-2 mt-1 text-deep-gold" />
+                <div className="flex flex-col text-warm-taupe leading-tight">
+                  <span>+91 9885490243</span>
+                  <span>+91 9866844792</span>
+                </div>
               </div>
+
             </div>
           </div>
+
         </div>
 
+        {/* Bottom Strip */}
         <div className="border-t border-warm-taupe/20 mt-8 pt-8 text-center">
           <p className="text-warm-taupe text-sm">
-            © 2025 SSCD Interiors. All rights reserved. | 
+            © 2025 SSCD Interiors. All rights reserved. |
             <Link to="/privacy" className="hover:text-deep-gold transition-colors ml-1">Privacy Policy</Link>
           </p>
         </div>
+
       </div>
     </footer>
   );

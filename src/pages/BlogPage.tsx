@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { Calendar, User, Tag } from 'lucide-react';
 
 const blogPosts = [

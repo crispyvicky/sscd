@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { Home, Building, RefreshCw, MessageCircle, ArrowRight, Plus, Minus, Check } from 'lucide-react';
 

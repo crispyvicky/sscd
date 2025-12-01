@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
@@ -30,9 +30,9 @@ function App() {
           </Routes>
         </main>
         <Footer />
-        <LeadPopup 
-          isOpen={showLeadPopup} 
-          onClose={() => setShowLeadPopup(false)} 
+        <LeadPopup
+          isOpen={showLeadPopup}
+          onClose={() => setShowLeadPopup(false)}
         />
       </div>
     </Router>

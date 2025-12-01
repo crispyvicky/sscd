@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+  import { useState, useEffect } from 'react'; 
 import { Link } from 'react-router-dom';
 import { Filter } from 'lucide-react';
 
@@ -11,14 +11,14 @@ const projects = [
     description: 'Luxury urban living with panoramic city views',
     year: '2024'
   },
-  {
-    id: 2,
-    title: 'Corporate Headquarters',
-    category: 'Commercial',
-    image: 'https://images.pexels.com/photos/2747449/pexels-photo-2747449.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&fit=crop',
-    description: 'Contemporary workspace fostering collaboration',
-    year: '2023'
-  },
+  // {
+  //   id: 2,
+  //   title: 'Corporate Headquarters',
+  //   category: 'Commercial',
+  //   image: 'https://images.pexels.com/photos/2747449/pexels-photo-2747449.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&fit=crop',
+  //   description: 'Contemporary workspace fostering collaboration',
+  //   year: '2023'
+  // },
   {
     id: 3,
     title: 'Coastal Retreat',

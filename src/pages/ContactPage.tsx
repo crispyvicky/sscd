@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+  import { useState, useEffect } from 'react';
 import { Mail, Phone, MapPin, Clock, Send, Check } from 'lucide-react';
 
 const ContactPage = () => {
@@ -197,11 +197,17 @@ const ContactPage = () => {
                     </div>
                     <div>
                       <h4 className="font-semibold text-charcoal">Phone</h4>
-                      <a 
-                        href="tel:+15551234567"
-                        className="text-charcoal/70 hover:text-navy transition-colors"
+                      <a
+                        href="tel:+919885490243"
+                        className="text-charcoal/70 hover:text-navy transition-colors block"
                       >
-                        +1 (555) 123-4567
+                        +91 9885490243
+                      </a>
+                      <a
+                        href="tel:+919866844792"
+                        className="text-charcoal/70 hover:text-navy transition-colors block"
+                      >
+                        +91 9866844792
                       </a>
                     </div>
                   </div>
@@ -213,8 +219,10 @@ const ContactPage = () => {
                     <div>
                       <h4 className="font-semibold text-charcoal">Studio Location</h4>
                       <p className="text-charcoal/70">
-                        123 Design District<br />
-                        San Francisco, CA 94107
+                        SCCD Interiors<br />
+                        Ravi Narayana Reddy Nagar<br />
+                        Devendernagar<br />
+                        Hyderabad
                       </p>
                     </div>
                   </div>
@@ -260,7 +268,6 @@ const ContactPage = () => {
               <MapPin className="w-12 h-12 text-navy mx-auto mb-4" />
               <h3 className="text-xl font-bold text-charcoal mb-2">Studio Location</h3>
               <p className="text-charcoal/70">Interactive map coming soon</p>
-              <p className="text-sm text-charcoal/60 mt-2">123 Design District, San Francisco, CA 94107</p>
             </div>
           </div>
         </div>
