@@ -6,14 +6,22 @@ const WhatsAppPopup = () => {
     const [phoneNumber, setPhoneNumber] = useState('');
 
     useEffect(() => {
+        // Check if already submitted/closed
+        const hasSeenPopup = localStorage.getItem('whatsapp_popup_seen');
+        if (hasSeenPopup) return;
+
         // Show popup after 3 seconds
         const timer = setTimeout(() => {
-            // Check if already submitted/closed in this session if needed, for now just show it
             setIsOpen(true);
         }, 3000);
 
         return () => clearTimeout(timer);
     }, []);
+
+    const handleClose = () => {
+        setIsOpen(false);
+        localStorage.setItem('whatsapp_popup_seen', 'true');
+    };
 
     const handleSubmit = (e: React.FormEvent) => {
         e.preventDefault();
@@ -26,6 +34,7 @@ const WhatsAppPopup = () => {
         window.open(`https://wa.me/918919721762?text=${encodeURIComponent(message)}`, '_blank');
 
         setIsOpen(false);
+        localStorage.setItem('whatsapp_popup_seen', 'true');
     };
 
     if (!isOpen) return null;
@@ -34,7 +43,7 @@ const WhatsAppPopup = () => {
         <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/50 p-4 animate-fade-in">
             <div className="bg-white rounded-lg p-6 max-w-md w-full relative shadow-xl transform transition-all animate-slide-up">
                 <button
-                    onClick={() => setIsOpen(false)}
+                    onClick={handleClose}
                     className="absolute top-4 right-4 text-gray-500 hover:text-gray-700 hover:bg-gray-100 rounded-full p-1 transition-colors"
                 >
                     <X size={20} />
