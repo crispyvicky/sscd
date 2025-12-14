@@ -1,4 +1,4 @@
-  import { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import { Mail, Phone, MapPin, Clock, Send, Check } from 'lucide-react';
 
 const ContactPage = () => {
@@ -20,7 +20,13 @@ const ContactPage = () => {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    // Handle form submission here
+
+    // Format message for WhatsApp
+    const whatsappMessage = `New Project Inquiry%0A%0A*Name:* ${formData.name}%0A*Email:* ${formData.email}%0A*Phone:* ${formData.phone}%0A*Project Type:* ${formData.projectType}%0A*Message:* ${formData.message}`;
+
+    // Open WhatsApp
+    window.open(`https://wa.me/918919721762?text=${whatsappMessage}`, '_blank');
+
     setIsSubmitted(true);
     setTimeout(() => {
       setIsSubmitted(false);
@@ -60,7 +66,7 @@ const ContactPage = () => {
                 <br />
                 <span className="font-sans">Project Today</span>
               </h2>
-              
+
               {!isSubmitted ? (
                 <form onSubmit={handleSubmit} className="space-y-6">
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
@@ -78,7 +84,7 @@ const ContactPage = () => {
                         className="w-full px-4 py-3 border border-warm-taupe rounded-lg focus:outline-none focus:ring-2 focus:ring-sage-green bg-white"
                       />
                     </div>
-                    
+
                     <div>
                       <label htmlFor="email" className="block text-sm font-medium text-charcoal mb-2">
                         Email Address *
@@ -109,7 +115,7 @@ const ContactPage = () => {
                         className="w-full px-4 py-3 border border-warm-taupe rounded-lg focus:outline-none focus:ring-2 focus:ring-sage-green bg-white"
                       />
                     </div>
-                    
+
                     <div>
                       <label htmlFor="projectType" className="block text-sm font-medium text-charcoal mb-2">
                         Project Type
@@ -174,7 +180,7 @@ const ContactPage = () => {
                   <span className="font-serif text-navy">Contact</span>
                   <span className="font-sans ml-2">Information</span>
                 </h3>
-                
+
                 <div className="space-y-6">
                   <div className="flex items-start">
                     <div className="bg-sage-green/20 p-3 rounded-lg mr-4">
@@ -182,7 +188,7 @@ const ContactPage = () => {
                     </div>
                     <div>
                       <h4 className="font-semibold text-charcoal">Email</h4>
-                      <a 
+                      <a
                         href="mailto:hello@sscdinteriors.com"
                         className="text-charcoal/70 hover:text-navy transition-colors"
                       >
@@ -219,7 +225,7 @@ const ContactPage = () => {
                     <div>
                       <h4 className="font-semibold text-charcoal">Studio Location</h4>
                       <p className="text-charcoal/70">
-                        SCCD Interiors<br />
+                        SSCD Interiors<br />
                         Ravi Narayana Reddy Nagar<br />
                         Devendernagar<br />
                         Hyderabad
@@ -263,13 +269,18 @@ const ContactPage = () => {
       {/* Map Section */}
       <section className="py-16 bg-warm-taupe">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="bg-charcoal/10 rounded-lg h-64 flex items-center justify-center">
-            <div className="text-center">
+          <a
+            href="https://www.google.com/maps/place/SSCD+INTERIOR/@17.5256649,78.4141928,17z/data=!3m1!4b1!4m6!3m5!1s0x3bcb8f002223bd3f:0xe79642d02d502e14!8m2!3d17.5256649!4d78.4141928!16s%2Fg%2F11wb33fsbs?entry=ttu&g_ep=EgoyMDI1MTIwOS4wIKXMDSoASAFQAw%3D%3D"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="bg-charcoal/10 rounded-lg h-64 flex items-center justify-center hover:bg-charcoal/20 transition-colors cursor-pointer group"
+          >
+            <div className="text-center group-hover:scale-105 transition-transform">
               <MapPin className="w-12 h-12 text-navy mx-auto mb-4" />
               <h3 className="text-xl font-bold text-charcoal mb-2">Studio Location</h3>
-              <p className="text-charcoal/70">Interactive map coming soon</p>
+              <p className="text-charcoal/70">Click to view on Google Maps</p>
             </div>
-          </div>
+          </a>
         </div>
       </section>
     </div>

@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import LeadPopup from './components/LeadPopup';
+import WhatsAppPopup from './components/WhatsAppPopup';
 import HomePage from './pages/HomePage';
 import AboutPage from './pages/AboutPage';
 import PortfolioPage from './pages/PortfolioPage';
@@ -34,6 +35,7 @@ function App() {
           isOpen={showLeadPopup}
           onClose={() => setShowLeadPopup(false)}
         />
+        <WhatsAppPopup />
       </div>
     </Router>
   );
