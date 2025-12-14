@@ -1,45 +1,16 @@
-import { useState, useEffect } from 'react';
 import { Link } from "react-router-dom";
 import { ArrowRight, Star, Users, Home, Layers } from "lucide-react";
 import { motion } from "framer-motion";
 import PortfolioTeaser from "../components/PortfolioTeaser";
 import ServicesPreview from "../components/ServicesPreview";
 
-interface HomePageProps {
-  setShowLeadPopup: (show: boolean) => void;
-}
-
 const fadeUp = {
   hidden: { opacity: 0, y: 40 },
   show: { opacity: 1, y: 0, transition: { duration: 0.8 } },
 };
 
-const HomePage: React.FC<HomePageProps> = ({ setShowLeadPopup }) => {
-  // Lead popup logic
-  useEffect(() => {
-    let hasShownPopup = false;
+const HomePage: React.FC = () => {
 
-    const timer = setTimeout(() => {
-      if (!hasShownPopup) {
-        setShowLeadPopup(true);
-        hasShownPopup = true;
-      }
-    }, 30000);
-
-    const handleScroll = () => {
-      if (window.scrollY > 800 && !hasShownPopup) {
-        setShowLeadPopup(true);
-        hasShownPopup = true;
-      }
-    };
-
-    window.addEventListener("scroll", handleScroll);
-
-    return () => {
-      clearTimeout(timer);
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, [setShowLeadPopup]);
 
   return (
     <div className="overflow-hidden">
@@ -235,7 +206,7 @@ const HomePage: React.FC<HomePageProps> = ({ setShowLeadPopup }) => {
             to="/contact"
             className="inline-flex items-center bg-deep-gold text-charcoal px-8 py-4 rounded-full text-lg font-semibold hover:bg-deep-gold/90 transition-all"
           >
-            Start Your Project  
+            Start Your Project
             <ArrowRight className="ml-2" size={20} />
           </Link>
         </motion.div>

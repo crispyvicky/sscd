@@ -1,8 +1,6 @@
-import { useState } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
-import LeadPopup from './components/LeadPopup';
 import WhatsAppPopup from './components/WhatsAppPopup';
 import HomePage from './pages/HomePage';
 import AboutPage from './pages/AboutPage';
@@ -13,7 +11,6 @@ import BlogPage from './pages/BlogPage';
 import ContactPage from './pages/ContactPage';
 
 function App() {
-  const [showLeadPopup, setShowLeadPopup] = useState(false);
 
   return (
     <Router>
@@ -21,7 +18,7 @@ function App() {
         <Navbar />
         <main>
           <Routes>
-            <Route path="/" element={<HomePage setShowLeadPopup={setShowLeadPopup} />} />
+            <Route path="/" element={<HomePage />} />
             <Route path="/about" element={<AboutPage />} />
             <Route path="/portfolio" element={<PortfolioPage />} />
             <Route path="/portfolio/:id" element={<ProjectPage />} />
@@ -31,10 +28,6 @@ function App() {
           </Routes>
         </main>
         <Footer />
-        <LeadPopup
-          isOpen={showLeadPopup}
-          onClose={() => setShowLeadPopup(false)}
-        />
         <WhatsAppPopup />
       </div>
     </Router>
